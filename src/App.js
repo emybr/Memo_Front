@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Rutinas } from './Componets/rutinas/Rutinas';
+import NavBar from './Componets/navBar/NavBar';
+// import CustomButton from './Componets/Button/Button.jsx';
+import { HomeTutor } from './Componets/HomeTutor/HomeTutor';
+
+
 
 function App() {
+  
+  
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    
+      
+      {/* <Rutinas/> */}
+      <HomeTutor/>
+      
+    </>
   );
 }
+
+
 
 export default App;

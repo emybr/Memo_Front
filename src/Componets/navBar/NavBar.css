@@ -1,0 +1,39 @@
+header {
+    display: flex;
+    flex-direction: column; /* Cambiamos la dirección de flexión a columna */
+    align-items: center;
+    justify-content: flex-end; /* Alineación al final para desplazar hacia la izquierda */
+    background-color: rgb(91, 86, 241);
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    position: relative; /* Agregamos posición relativa para elementos desplegables */
+}
+
+.line {
+    width: 50px; /* Ancho de las líneas */
+    height: 2px; /* Altura de las líneas */
+    background-color: black;
+    margin: 2px 0; /* Espacio entre las líneas */
+}
+
+ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    padding: 0;
+    margin: 0;
+    position: absolute; /* Posición absoluta para el menú desplegable */
+    top: 100%; /* Colocamos el menú debajo del encabezado */
+    left: 0; /* Alineamos el menú con el borde izquierdo del encabezado */
+    background-color: rgb(91, 86, 241);
+    display: none; /* Inicialmente ocultamos el menú desplegable */
+}
+
+li {
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+header:hover ul {
+    display: block; /* Mostramos el menú desplegable al pasar el mouse por encima del encabezado */
+}
+
+
