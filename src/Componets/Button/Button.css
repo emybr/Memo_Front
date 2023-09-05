@@ -1,7 +1,14 @@
+@font-face {
+  font-family: 'theBold';
+  src: url('../../../public/THEBOLDFONT.ttf') format('truetype');
+  font-weight:lighter;
+  font-style: normal;
+}
+
 .custom-button {
-    width: 180px;
-    margin-top: 12px;
-    padding: 12.5px 30px;
+    width: 300px;
+    margin-top: 19px;
+    padding: 20px 30px;
     border: 0;
     border-radius: 100px;
     background-color: #ff6600;
@@ -9,14 +16,16 @@
     font-weight: Bold;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size:medium;
+    font-family:'theBold';
+    letter-spacing: 3px;
+    font-size:25px;
+    box-shadow:  0 5px #bb530e;
   }
   
 
   .custom-button:hover {
     background-color: #6fc5ff;
-    box-shadow: 0 0 20px #6fc5ff50;
+    box-shadow: 0 0 20px #ff986f50;
     transform: scale(1.1);
   }
   
@@ -58,10 +67,10 @@
 
 
   .custom-buttonAzulRedondo {
-    width: 45px;
-    height: 45px;
+    width: 60px;
+    height: 60px;
 
-    margin-top: 12px;
+    margin-top: 27px;
     padding: 0;
     border: 0;
     border-radius: 100px;
