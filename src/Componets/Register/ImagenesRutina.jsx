@@ -64,13 +64,13 @@ function ImagenesActividad() {
         }
         setImagenesSeleccionadas(nuevasImagenesSeleccionadas);
     };
-
+     // cambio link linea 73 http://localhost:8080/actividad/seleccion
     const enviarSeleccion = async () => {
         try {
             const imagenesSeleccionadasNombres = imagenesSeleccionadas.map(
                 (index) => imagenes[index].nombre
             );
-            const response = await fetch('http://localhost:8080/actividad/seleccion', {
+            const response = await fetch('https://memo-back-bklt-dev.fl0.io/actividad/seleccion', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -90,13 +90,13 @@ function ImagenesActividad() {
             console.error('Error al enviar la selección de imágenes:', error);
         }
     };
-
+    //cambio link linea 99 http://localhost:8080/actividad/imagenes/${parametrosString}
     useEffect(() => {
         async function fetchImagenes() {
             try {
                 const parametrosString = parametros.join('&parametros='); // Convierte el array en una cadena para la URL
                 const response = await fetch(
-                    `http://localhost:8080/actividad/imagenes/${parametrosString}`
+                    `https://memo-back-bklt-dev.fl0.io/actividad/imagenes/${parametrosString}`
                 );
                 if (!response.ok) {
                     throw new Error('No se pudieron cargar las imágenes');
