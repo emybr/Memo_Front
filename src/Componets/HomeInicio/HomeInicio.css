@@ -1,0 +1,13 @@
+.BotonComenzar {
+    display: flex;
+    justify-content: center;
+
+}
+
+.ImgMemo {
+    margin-top: 20%;
+    width: 500px;
+    margin-left: -10%;
+    display: flex;
+    justify-content: center;
+}
