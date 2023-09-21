@@ -1,1 +1,86 @@
+@font-face {
+    font-family: 'theBold';
+    src: url('../../../public/THEBOLDFONT.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
 
+@font-face {
+    font-family: 'nunito';
+    src: url('../../../public/Nunito-Regular.ttf') format('truetype');
+    font-weight: lighter;
+    font-style: normal;
+}
+
+body {
+    background-color: #ECECF5;
+}
+
+.containerRegister {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo {
+    margin-top: 200px;
+    font-family: 'theBold';
+    color: #FF6600;
+    letter-spacing: 3px;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+
+}
+
+.subtitulo {
+    font-family: 'nunito';
+    color: #737474;
+    font-size: medium;
+    padding-left: 20px;
+}
+
+input {
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #737474;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    font-family: 'nunito';
+    font-size: 25px;
+    box-shadow: 0 5px #737474;
+
+}
+
+.olvideContrasenia {
+    font-family: 'nunito';
+    color: #206ce5;
+    font-size: small;
+    margin-top: 15px;
+    
+}
+.contenerContrasenia{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBotonAzul{
+    margin-top: 50px;
+    display: flex;
+    justify-content:space-between;
+}
+.botonAzul{
+    width: 50px;
+    height: 50px;
+}
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    outline: none; 
+  }

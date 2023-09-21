@@ -1,0 +1,10 @@
+.contenedorTerminos{
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.tituloTerminos{
+    padding: 20px;
+}

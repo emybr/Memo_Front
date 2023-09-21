@@ -5,11 +5,12 @@ import NavBar from './Componets/navBar/NavBar';
 // import CustomButton from './Componets/Button/Button.jsx';
 import { HomeTutor } from './Componets/HomeTutor/HomeTutor';
 import { HomeLogin } from './Componets/HomeLogin/HomeLogin';
-import { BrowserRouter, Route, Routes,useHistory } from 'react-router-dom'
+import { BrowserRouter, Route, Routes,useHistory, Navigate } from 'react-router-dom'
 import RegisterUser from './Componets/Register/RegisterUser';
 import { HomeInicio } from './Componets/HomeInicio/HomeInicio';
 import ImagenesActividad from './Componets/Register/ImagenesRutina';
 import { Categorias } from './Componets/Categorias/Categorias.jsx';
+import Terminos from './Componets/Terminos/Terminos';
 
 
 
@@ -27,6 +28,8 @@ function App() {
         <Route exact path='/tutor/categorias' element={<Categorias/>} />
         <Route exact path='/register' element={<RegisterUser/>}/>
         <Route exact path="/actividad/imagenes/abrir" element={<ImagenesActividad />} />
+        <Route exact path='/terminos' element={<Terminos/>}/>
+        <Route path='/*' element={<Navigate to='/inicio' />} />
       </Routes>
     </BrowserRouter>
     </>

@@ -1,13 +1,18 @@
-.BotonComenzar {
-    display: flex;
+.botonComenzar {
+    display: block;
     justify-content: center;
 
 }
 
-.ImgMemo {
-    margin-top: 20%;
-    width: 500px;
-    margin-left: -10%;
-    display: flex;
-    justify-content: center;
+.imgMemo {
+    width: 400px;
+    
 }
+
+.homeLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Esto hace que el contenedor ocupe toda la altura de la pantalla */
+  }
