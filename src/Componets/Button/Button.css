@@ -25,7 +25,7 @@
   
 
   .custom-button:hover {
-    background-color: #6fc5ff;
+    background-color: #ffb525;
     box-shadow: 0 0 20px #ff986f50;
     transform: scale(1.1);
   }

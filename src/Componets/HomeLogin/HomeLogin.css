@@ -54,6 +54,9 @@ input {
     box-shadow: 0 5px #737474;
 
 }
+input:focus {
+    outline: none;
+  }
 
 .olvideContrasenia {
     font-family: 'nunito';
