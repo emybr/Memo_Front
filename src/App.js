@@ -11,6 +11,7 @@ import { HomeInicio } from './Componets/HomeInicio/HomeInicio';
 import ImagenesActividad from './Componets/Register/ImagenesRutina';
 import { Categorias } from './Componets/Categorias/Categorias.jsx';
 import Terminos from './Componets/Terminos/Terminos';
+import ListaSemana from './Componets/ListaSemana/ListaSemana';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route exact path="/actividad/imagenes/abrir" element={<ImagenesActividad />} />
         <Route exact path='/terminos' element={<Terminos/>}/>
         <Route path='/*' element={<Navigate to='/inicio' />} />
+        <Route exact path='/semanaTutor' element={<ListaSemana/>}/>
       </Routes>
     </BrowserRouter>
     </>
