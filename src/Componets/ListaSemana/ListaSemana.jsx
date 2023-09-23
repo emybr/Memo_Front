@@ -41,27 +41,27 @@
 import React, { useState } from 'react';
 import CustomButton from '../Button/Button';
 import '../Button/Button.css';
-import { useHistory } from 'react';
+// import { useHistory } from 'react';
 
 const ListaSemana = () => {
   // Estado para almacenar el día de la semana seleccionado
-  const [selectedDay, setSelectedDay] = useState(null);
+  // const [selectedDay, setSelectedDay] = useState(null);
 
-  // Acceso al objeto history para redirigir a la pantalla de información
-  const history = useHistory();
+  // // Acceso al objeto history para redirigir a la pantalla de información
+  // const history = useHistory();
 
-  // Función de manejo de clic para el botón de día
-  const handleClick = (day) => {
-    setSelectedDay(day); // Actualiza el estado con el día seleccionado
-  };
+  // // Función de manejo de clic para el botón de día
+  // const handleClick = (day) => {
+  //   setSelectedDay(day); // Actualiza el estado con el día seleccionado
+  // };
 
-  // Función para redirigir a la pantalla de información
-  const redirectToInfo = () => {
-    if (selectedDay) {
-      // Redirige a la pantalla de información con el día como parámetro
-      history.push(`/informacion/${selectedDay}`);
-    }
-  };
+  // // Función para redirigir a la pantalla de información
+  // const redirectToInfo = () => {
+  //   if (selectedDay) {
+  //     // Redirige a la pantalla de información con el día como parámetro
+  //     history.push(`/informacion/${selectedDay}`);
+  //   }
+  // };
 
   return (
     <>

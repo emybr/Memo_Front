@@ -5,7 +5,7 @@ import NavBar from './Componets/navBar/NavBar';
 // import CustomButton from './Componets/Button/Button.jsx';
 import { HomeTutor } from './Componets/HomeTutor/HomeTutor';
 import { HomeLogin } from './Componets/HomeLogin/HomeLogin';
-import { BrowserRouter, Route, Routes,useHistory, Navigate } from 'react-router-dom'
+import { BrowserRouter, Route, Routes, Navigate } from 'react-router-dom'
 import RegisterUser from './Componets/Register/RegisterUser';
 import { HomeInicio } from './Componets/HomeInicio/HomeInicio';
 import ImagenesActividad from './Componets/Register/ImagenesRutina';
