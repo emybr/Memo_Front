@@ -12,6 +12,9 @@ import ImagenesActividad from './Componets/Register/ImagenesRutina';
 import { Categorias } from './Componets/Categorias/Categorias.jsx';
 import Terminos from './Componets/Terminos/Terminos';
 import ListaSemana from './Componets/ListaSemana/ListaSemana';
+import HomeUsuario from './Componets/HomeUsuario/HomeUsuario';
+import { UserProvider } from './UserContext'; // Importa el contexto
+
 
 
 
@@ -20,6 +23,7 @@ import ListaSemana from './Componets/ListaSemana/ListaSemana';
 function App() {
   return (
     <>
+    <UserProvider>
     <BrowserRouter>
       <Routes>
       <Route exact path='/inicio' element={ <HomeInicio/>} />
@@ -32,8 +36,10 @@ function App() {
         <Route exact path='/terminos' element={<Terminos/>}/>
         <Route path='/*' element={<Navigate to='/inicio' />} />
         <Route exact path='/semanaTutor' element={<ListaSemana/>}/>
+        <Route exact path='/homeUsuario' element={<HomeUsuario/>}/>
       </Routes>
     </BrowserRouter>
+    </UserProvider>
     </>
   );
 }

@@ -1,0 +1,17 @@
+.botonHomeTutor{
+    background-color: #2372d9;
+    color: #ffffff;
+    width: 130px;
+    height: 130px;
+    font-family: 'theBold';
+    font-size: large;
+    border-radius: 10px;
+}
+.homeUsuario{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}

@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import '../HomeLogin/HomeLogin.css'
 
+
 export const HomeLogin = () => {
   return ( 
     <div className="containerRegister">
