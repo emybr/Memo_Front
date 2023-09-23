@@ -38,12 +38,12 @@
 
 // export default ListaSemana
 
-import React, { useState } from 'react';
-import CustomButton from '../Button/Button';
-import '../Button/Button.css';
-// import { useHistory } from 'react';
+// import React, { useState } from 'react';
+// import CustomButton from '../Button/Button';
+// import '../Button/Button.css';
+// // import { useHistory } from 'react';
 
-const ListaSemana = () => {
+// const ListaSemana = () => {
   // Estado para almacenar el día de la semana seleccionado
   // const [selectedDay, setSelectedDay] = useState(null);
 
@@ -63,27 +63,28 @@ const ListaSemana = () => {
   //   }
   // };
 
-  return (
-    <>
-      <div className='HomeTutor'>
-        <div>
-          <CustomButton text="LUNES" onClick={() => handleClick('LUNES')} estilo={"custom-button"} />
-          <CustomButton text="MARTES" onClick={() => handleClick('MARTES')} estilo={"custom-button"} />
-          <CustomButton text="MIERCOLES" onClick={() => handleClick('MIERCOLES')} estilo={"custom-button"} />
-          <CustomButton text="JUEVES" onClick={() => handleClick('JUEVES')} estilo={"custom-button"} />
-          <CustomButton text="VIERNES" onClick={() => handleClick('VIERNES')} estilo={"custom-button"} />
-          <CustomButton text="SABADO" onClick={() => handleClick('SABADO')} estilo={"custom-button"} />
-          <CustomButton text="DOMINGO" onClick={() => handleClick('DOMINGO')} estilo={"custom-button"} />
+  // desde aca
+//   return (
+//     <>
+//       <div className='HomeTutor'>
+//         <div>
+//           <CustomButton text="LUNES" onClick={() => handleClick('LUNES')} estilo={"custom-button"} />
+//           <CustomButton text="MARTES" onClick={() => handleClick('MARTES')} estilo={"custom-button"} />
+//           <CustomButton text="MIERCOLES" onClick={() => handleClick('MIERCOLES')} estilo={"custom-button"} />
+//           <CustomButton text="JUEVES" onClick={() => handleClick('JUEVES')} estilo={"custom-button"} />
+//           <CustomButton text="VIERNES" onClick={() => handleClick('VIERNES')} estilo={"custom-button"} />
+//           <CustomButton text="SABADO" onClick={() => handleClick('SABADO')} estilo={"custom-button"} />
+//           <CustomButton text="DOMINGO" onClick={() => handleClick('DOMINGO')} estilo={"custom-button"} />
 
-          <div className='contenedorBotonAzul'>
-            <button onClick={redirectToInfo}>
-              <img className="botonAzul" src="back.png" alt="back" />
-            </button>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
+//           <div className='contenedorBotonAzul'>
+//             <button onClick={redirectToInfo}>
+//               <img className="botonAzul" src="back.png" alt="back" />
+//             </button>
+//           </div>
+//         </div>
+//       </div>
+//     </>
+//   );
+// }
 
-export default ListaSemana;
+// export default ListaSemana;
