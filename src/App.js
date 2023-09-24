@@ -14,6 +14,7 @@ import Terminos from './Componets/Terminos/Terminos';
 import ListaSemana from './Componets/ListaSemana/ListaSemana';
 import HomeUsuario from './Componets/HomeUsuario/HomeUsuario';
 import { UserProvider } from './UserContext'; // Importa el contexto
+import PassTutor from './Componets/PassTutor/PassTutor';
 
 
 
@@ -28,7 +29,7 @@ function App() {
       <Routes>
       <Route exact path='/inicio' element={ <HomeInicio/>} />
         <Route exact path='/login' element={ <HomeLogin/>} />
-        <Route exact path='/tutor' element={ <HomeTutor/>} />
+        <Route exact path='/tutor/:esarData' element={ <HomeTutor/>} />
         <Route exact path='/tutor/rutinas' element={ <Rutinas/>} />
         <Route exact path='/tutor/categorias' element={<Categorias/>} />
         <Route exact path='/register' element={<RegisterUser/>}/>
@@ -37,6 +38,7 @@ function App() {
         <Route path='/*' element={<Navigate to='/inicio' />} />
         <Route exact path='/semanaTutor' element={<ListaSemana/>}/>
         <Route exact path='/homeUsuario/:esarData' element={<HomeUsuario/>}/>
+        <Route exact path='/passTutor/:esarData' element={<PassTutor/>}/>
       </Routes>
     </BrowserRouter>
     </UserProvider>
