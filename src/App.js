@@ -36,7 +36,7 @@ function App() {
         <Route exact path="/actividad/imagenes/abrir" element={<ImagenesActividad />} />
         <Route exact path='/terminos' element={<Terminos/>}/>
         <Route path='/*' element={<Navigate to='/inicio' />} />
-        <Route exact path='/semanaTutor' element={<ListaSemana/>}/>
+        <Route exact path='/semanaTutor/:esarData' element={<ListaSemana/>}/>
         <Route exact path='/homeUsuario/:esarData' element={<HomeUsuario/>}/>
         <Route exact path='/passTutor/:esarData' element={<PassTutor/>}/>
       </Routes>

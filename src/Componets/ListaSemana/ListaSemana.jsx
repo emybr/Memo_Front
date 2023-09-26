@@ -10,7 +10,7 @@ const ListaSemana = () => {
 
     };
   const location = useLocation();
-    const pathnameParts = location.pathname.split('/esarData='); // Divide la ruta en partes
+    const pathnameParts = location.pathname.split('/semanaTutor/'); // Divide la ruta en partes
     const esarData = pathnameParts[pathnameParts.length - 1]; // Obtén la última parte de la ruta
 
     useEffect(() => {

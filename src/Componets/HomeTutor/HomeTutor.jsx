@@ -27,7 +27,7 @@ export const HomeTutor = () => {
                     <CustomButton text="MANUAL DE USO" onClick={handleClick} estilo={"custom-button"} />
                     <CustomButton text="AVATAR" onClick={handleClick} estilo={"custom-button"} />
                     <CustomButton text="MI CARNET" onClick={handleClick} estilo={"custom-button"} />
-                    <Link to="/semanaTutor">
+                    <Link to={`/semanaTutor/${esarData}`}>
                         <CustomButton text="SEMANA" estilo={"custom-button"} />
                     </Link>
                     <CustomButton text="COMUNICACION" onClick={handleClick} estilo={"custom-button"} />
