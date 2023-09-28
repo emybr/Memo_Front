@@ -12,7 +12,7 @@ const RegisterUser = () => {
     };
     return (
         <div className="containerRegister">
-            <form action="https://memo-back-bklt-dev.fl0.io/login/register" method="POST" className="formRegistro">
+            <form action="https://memo-back-txp0-dev.fl0.io//login/register" method="POST" className="formRegistro">
                 <div className="titulo">
                     <h1>Registro</h1>
                 </div>

@@ -1,6 +1,6 @@
 
 import './App.css';
-import { Rutinas } from './Componets/rutinas/Rutinas';
+import  Rutinas  from './Componets/rutinas/Rutinas';
 import NavBar from './Componets/navBar/NavBar';
 // import CustomButton from './Componets/Button/Button.jsx';
 import { HomeTutor } from './Componets/HomeTutor/HomeTutor';
@@ -30,7 +30,7 @@ function App() {
       <Route exact path='/inicio' element={ <HomeInicio/>} />
         <Route exact path='/login' element={ <HomeLogin/>} />
         <Route exact path='/tutor/:esarData' element={ <HomeTutor/>} />
-        <Route exact path='/tutor/rutinas' element={ <Rutinas/>} />
+        <Route exact path='/tutor/rutinas/:esarData/:dia' element={ <Rutinas/>} />
         <Route exact path='/tutor/categorias' element={<Categorias/>} />
         <Route exact path='/register' element={<RegisterUser/>}/>
         <Route exact path="/actividad/imagenes/abrir" element={<ImagenesActividad />} />
