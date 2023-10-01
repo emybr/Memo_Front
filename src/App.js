@@ -15,6 +15,7 @@ import ListaSemana from './Componets/ListaSemana/ListaSemana';
 import HomeUsuario from './Componets/HomeUsuario/HomeUsuario';
 import { UserProvider } from './UserContext'; // Importa el contexto
 import PassTutor from './Componets/PassTutor/PassTutor';
+import Pictograma from './Componets/Pictograma/Pictograma';
 
 
 
@@ -39,6 +40,7 @@ function App() {
         <Route exact path='/semanaTutor/:esarData' element={<ListaSemana/>}/>
         <Route exact path='/homeUsuario/:esarData' element={<HomeUsuario/>}/>
         <Route exact path='/passTutor/:esarData' element={<PassTutor/>}/>
+        <Route exact path='/pictograma' element={<Pictograma/>}/>
       </Routes>
     </BrowserRouter>
     </UserProvider>
